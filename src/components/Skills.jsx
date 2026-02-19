@@ -33,11 +33,11 @@ const skillCategories = [
 
 const Skills = () => {
     return (
-        <section id="about" className="skills">
+        <section id="skills" className="skills">
             <div className="container">
                 <div className="section-header animate-in">
                     <h2 className="section-title">Core <span className="text-gradient">Superpowers</span></h2>
-                    <p className="section-subtitle">End-to-end expertise across AI tools, intelligent UI/UX design, and modern frontend architecture—enabling rapid prototyping, clean scalable implementation, and delivery of high-performance, user-centric web applications from concept to production.</p>
+                    <p className="section-subtitle">End-to-end expertise across AI tools, intelligent product design, and modern frontend architecture—enabling rapid prototyping, clean scalable implementation, and delivery of high-performance, user-centric web applications from concept to production.</p>
                 </div>
 
                 <div className="skills-grid-modern">

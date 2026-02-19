@@ -78,7 +78,7 @@
 
 @media (max-width: 850px) {
     .experience {
-        padding: 1rem 1rem;
+        padding: 1rem 0;
     }
 
     .experience-item {

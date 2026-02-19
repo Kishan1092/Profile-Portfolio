@@ -2,22 +2,28 @@ import './Experience.css';
 
 const experiences = [
     {
-        role: "Senior UI/UX Designer",
+        role: "Senior Product Designer",
         company: "Decimal Technologies Pvt. Ltd.",
         period: "07/2021 – Present",
-        description: "Collaborated with enterprise and fintech clients, including Gyan Bharatam (Ministry of Culture), NUCFDC (LOS), Canara Bank, DBS Bank, Karnataka Bank, AU Bank, UNO Bank, and IDBI Bank, to deliver product-focused UI/UX solutions. Applied AI-enabled ideation and research synthesis to clarify requirements and guide design decisions. Designed user journeys, wireframes, high-fidelity prototypes, and reusable design system components in Figma and Adobe XD. Leveraged Figma AI, FigJam AI, and GenAI-based content tools to accelerate iteration and improve UX clarity. Partnered closely with engineering teams to build responsive, production-ready interfaces, ensuring consistency and scalability across large fintech platforms."
+        description: "Leading end-to-end product design for high-scale Fintech solutions (HDFC, Canara Bank, AU Small Finance). Successfully integrated AI-driven design workflows using Figma AI and FigJam to accelerate discovery cycles by 30%. Architecting scalable Design Systems and complex user journeys for compliance-heavy platforms, ensuring WCAG 2.1 accessibility and seamless hand-off to engineering teams. Collaborating directly with stakeholders to align UX strategy with business KPIs and technical feasibility."
     },
     {
-        role: "Senior Full Stack Developer",
+        role: "Product Designer & Full Stack Lead",
         company: "Friends Color Images Pvt. Ltd.",
         period: "10/2018 – 06/2021",
-        description: "Owned UI/UX design and frontend implementation for multiple B2B and B2C web platforms from requirements to production release. Designed responsive dashboards, marketing websites, and reusable UI components with a focus on performance, scalability, and SEO. Bridged design and development by implementing component-based UI architectures, ensuring faster iterations and consistent user experience. Collaborated with product stakeholders to align UX decisions with business and technical constraints."
+        description: "Owned the complete product lifecycle for B2B/B2C platforms, bridging the gap between strategic design and technical implementation. Developed and maintained unified component libraries that standardized UI across multiple product lines. Leveraged data-informed insights to optimize user flows, resulting in a significant uplift in conversion rates and user engagement. Mentored cross-functional teams on design-thinking methodologies and rapid prototyping."
     },
     {
-        role: "Software Designer & Developer",
+        role: "Interaction Designer",
         company: "Silver Touch Technologies Ltd.",
         period: "01/2018 – 08/2018",
-        description: "Designed UX/UI solutions for web, Android, and iOS. Produced wireframes and high-fidelity interactive prototypes."
+        description: "Conceptualized and delivered intuitive cross-platform visual systems for Web, Android, and iOS. Focused on translating complex business requirements into user-centric interfaces through rigorous wireframing and interactive prototyping. Established base-level design guidelines and interaction patterns that ensured visual consistency across the early-stage product ecosystem."
+    },
+    {
+        role: "UI Developer & Design Trainee",
+        company: "Affy Informatics Pvt. Ltd.",
+        period: "08/2015 – 11/2017",
+        description: "Executed visual design and frontend development for responsive web applications. Focused on atomic design principles to create reusable UI components. Gained deep structural knowledge of layout planning, typography, and color theory while collaborating with senior designers to refine high-fidelity mockups and interaction details."
     }
 ];
 
@@ -28,7 +34,11 @@ const Experience = () => {
                 <h2 className="section-title animate-in">Career <span className="text-gradient">Journey</span></h2>
                 <div className="experience-list">
                     {experiences.map((exp, index) => (
-                        <div key={index} className="experience-item glass animate-in">
+                        <div
+                            key={index}
+                            className="experience-item glass"
+                            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+                        >
                             <div className="exp-side">
                                 <span className="exp-period">{exp.period}</span>
                             </div>

@@ -16,7 +16,8 @@
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
   --card-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
-  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 [data-theme='light'] {
@@ -31,7 +32,12 @@
   --accent-color: #059669;
   --border-color: rgba(15, 23, 42, 0.15);
   --gradient-main: linear-gradient(135deg, #ea580c 0%, #f97316 45%, #7c3aed 100%);
-  --card-shadow: 0 15px 50px -10px rgba(0, 0, 0, 0.12);
+  --card-shadow: 0 15px 50px -10px rgba(0, 0, 0, 0.1);
+  --card-shadow-hover: 0 30px 60px -12px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme='dark'] {
+  --card-shadow-hover: 0 40px 80px -20px rgba(0, 0, 0, 0.6);
 }
 
 * {
@@ -110,9 +116,70 @@ ul {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0;
   position: relative;
   z-index: 2;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+}
+
+section {
+  padding: 6rem 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 0;
+  }
+}
+
+.section-title {
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Responsive Utilities */
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 section:nth-of-type(even) {
@@ -221,7 +288,12 @@ section:nth-of-type(even) {
   transition: var(--transition-smooth);
 }
 
-.theme-toggle:hover {
-  background: var(--surface-color);
-  border-color: var(--primary-color);
+.text-white {
+  color: #ffffff !important;
+}
+
+[data-theme='light'] .text-white {
+  color: var(--text-primary) !important;
+  font-weight: 700;
+  /* Added weight for better highlight in light mode */
 }

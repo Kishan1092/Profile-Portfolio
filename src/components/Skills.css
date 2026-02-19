@@ -24,10 +24,10 @@
     grid-column: span 6;
     padding: 3.5rem;
     border-radius: 40px;
-    background: rgba(30, 41, 59, 0.4);
+    background: var(--surface-color-glass);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(148, 163, 184, 0.1);
+    border: 1px solid var(--border-color);
     transition: var(--transition-smooth);
     display: flex;
     flex-direction: column;
@@ -35,14 +35,14 @@
 
 /* AI card gets more prominence */
 .skill-category-card:nth-child(2) {
-    background: linear-gradient(135deg, rgba(30, 41, 59, 0.4) 0%, rgba(249, 115, 22, 0.05) 100%);
-    border: 1px solid rgba(249, 115, 22, 0.2);
+    background: linear-gradient(135deg, var(--surface-color-glass) 0%, var(--primary-glow) 100%);
+    border: 1px solid var(--primary-color);
 }
 
 .skill-category-card:hover {
     transform: translateY(-8px);
     border-color: var(--primary-color);
-    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--card-shadow-hover);
 }
 
 .category-title {
@@ -71,8 +71,8 @@
 }
 
 .skill-tag {
-    background: rgba(15, 23, 42, 0.5);
-    border: 1px solid rgba(148, 163, 184, 0.1);
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
     padding: 0.8rem 1.2rem;
     border-radius: 12px;
     font-size: 0.9rem;
@@ -83,7 +83,7 @@
 }
 
 .skill-tag:hover {
-    background: rgba(249, 115, 22, 0.1);
+    background: var(--primary-glow);
     color: var(--primary-color);
     border-color: var(--primary-color);
 }
@@ -121,7 +121,6 @@
     font-size: 0.8rem;
     color: var(--text-secondary);
     line-height: 1.5;
-    opacity: 0.8;
 }
 
 @media (max-width: 1100px) {
