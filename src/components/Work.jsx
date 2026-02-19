@@ -27,7 +27,7 @@ const Work = () => {
             <div className="container">
                 <div className="section-header animate-in">
                     <h2 className="section-title">Selected <span className="text-gradient">Work</span></h2>
-                    <p className="section-subtitle">A collection of projects that define my philosophy.</p>
+                    <p className="section-subtitle">Projects that showcase how ideas are transformed into clear, effective, and user-focused solutions through careful planning and execution, integrating intelligent AI capabilities with thoughtful design to create experiences that are both innovative and intuitive.</p>
                 </div>
                 <div className="projects-grid">
                     {projects.map((project, index) => (
