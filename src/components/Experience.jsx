@@ -24,20 +24,22 @@ const experiences = [
 const Experience = () => {
     return (
         <section id="experience" className="experience">
-            <h2 className="section-title animate-in">Career <span className="text-gradient">Journey</span></h2>
-            <div className="experience-list">
-                {experiences.map((exp, index) => (
-                    <div key={index} className="experience-item glass animate-in">
-                        <div className="exp-side">
-                            <span className="exp-period">{exp.period}</span>
+            <div className="container">
+                <h2 className="section-title animate-in">Career <span className="text-gradient">Journey</span></h2>
+                <div className="experience-list">
+                    {experiences.map((exp, index) => (
+                        <div key={index} className="experience-item glass animate-in">
+                            <div className="exp-side">
+                                <span className="exp-period">{exp.period}</span>
+                            </div>
+                            <div className="exp-main">
+                                <h3 className="exp-role">{exp.role}</h3>
+                                <p className="exp-company">{exp.company}</p>
+                                <p className="exp-desc">{exp.description}</p>
+                            </div>
                         </div>
-                        <div className="exp-main">
-                            <h3 className="exp-role">{exp.role}</h3>
-                            <p className="exp-company">{exp.company}</p>
-                            <p className="exp-desc">{exp.description}</p>
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </section>
     );

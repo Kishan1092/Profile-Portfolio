@@ -19,11 +19,11 @@ const Navbar = ({ theme, toggleTheme }) => {
             <li><a href="#experience" onClick={() => setIsMenuOpen(false)}>Experience</a></li>
             <li><a href="#education" onClick={() => setIsMenuOpen(false)}>Education</a></li>
             <li><a href="#about" onClick={() => setIsMenuOpen(false)}>Skills</a></li>
-            <li><a href="#contact" className="btn btn-primary btn-small" onClick={() => setIsMenuOpen(false)}>Hire Me</a></li>
           </ul>
         </div>
 
         <div className="nav-actions">
+          <a href="#contact" className="btn btn-primary btn-small hire-me-btn">Hire Me</a>
           <button className="theme-toggle" onClick={toggleTheme} title="Toggle Theme">
             {theme === 'dark' ? '☀️' : '🌙'}
           </button>

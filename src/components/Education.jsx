@@ -16,15 +16,17 @@ const education = [
 const Education = () => {
     return (
         <section id="education" className="education">
-            <h2 className="section-title animate-in">Education</h2>
-            <div className="education-grid">
-                {education.map((edu, index) => (
-                    <div key={index} className="education-card glass animate-in">
-                        <span className="edu-period">{edu.period}</span>
-                        <h3 className="edu-degree">{edu.degree}</h3>
-                        <p className="edu-school">{edu.school}</p>
-                    </div>
-                ))}
+            <div className="container">
+                <h2 className="section-title animate-in">Education</h2>
+                <div className="education-grid">
+                    {education.map((edu, index) => (
+                        <div key={index} className="education-card glass animate-in">
+                            <span className="edu-period">{edu.period}</span>
+                            <h3 className="edu-degree">{edu.degree}</h3>
+                            <p className="edu-school">{edu.school}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );

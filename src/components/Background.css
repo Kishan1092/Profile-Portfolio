@@ -216,14 +216,14 @@
 
 /* Theme Switching Smoothness */
 [data-theme='light'] .bg-blob {
-    opacity: 0.06;
+    opacity: 0.1;
 }
 
 [data-theme='light'] .vector {
     color: var(--primary-color);
-    opacity: 0.2;
+    opacity: 0.3;
 }
 
 [data-theme='light'] .bg-scanline {
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.02), transparent);
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.04), transparent);
 }

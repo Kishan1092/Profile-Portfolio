@@ -11,7 +11,7 @@
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --accent-color: #10b981;
-  --border-color: rgba(148, 163, 184, 0.15);
+  --border-color: rgba(148, 163, 184, 0.2);
   --gradient-main: linear-gradient(135deg, #f97316 0%, #fb923c 45%, #8b5cf6 100%);
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -29,15 +29,20 @@
   --text-primary: #0f172a;
   --text-secondary: #475569;
   --accent-color: #059669;
-  --border-color: rgba(15, 23, 42, 0.1);
+  --border-color: rgba(15, 23, 42, 0.15);
   --gradient-main: linear-gradient(135deg, #ea580c 0%, #f97316 45%, #7c3aed 100%);
-  --card-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+  --card-shadow: 0 15px 50px -10px rgba(0, 0, 0, 0.12);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 html {
@@ -106,6 +111,16 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+section:nth-of-type(even) {
+  background: rgba(148, 163, 184, 0.05);
+}
+
+[data-theme='light'] section:nth-of-type(even) {
+  background: rgba(0, 0, 0, 0.03);
 }
 
 /* Animations */
@@ -164,10 +179,16 @@ ul {
   border: none;
 }
 
+.btn-small {
+  padding: 0.6rem 1.4rem;
+  font-size: 0.85rem;
+}
+
 .btn-primary {
   background: var(--gradient-main);
   color: white;
   box-shadow: 0 10px 20px -5px rgba(255, 61, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .btn-primary:hover {

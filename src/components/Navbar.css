@@ -69,6 +69,16 @@
     gap: 1.5rem;
 }
 
+.hire-me-btn {
+    box-shadow: 0 8px 15px -4px rgba(249, 115, 22, 0.4);
+    white-space: nowrap;
+    font-weight: 800;
+}
+
+.hire-me-btn:hover {
+    box-shadow: 0 12px 20px -4px rgba(249, 115, 22, 0.5);
+}
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -103,6 +113,15 @@
 
     .nav-content {
         padding: 0 1.5rem;
+    }
+
+    .nav-actions {
+        gap: 0.8rem;
+    }
+
+    .hire-me-btn {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.8rem;
     }
 
     .menu-toggle {
