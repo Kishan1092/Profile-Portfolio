@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -10,42 +8,49 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Background from './components/Background';
+import Loader from './components/Loader';
 import './App.css';
 
 import { Linkedin, Github, Dribbble, Instagram, Mail } from 'lucide-react';
 
 function App() {
   const [theme, setTheme] = useState('dark');
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate initial loading sequence
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1800);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-      easing: 'ease-out-quint',
-      delay: 100,
-    });
-  }, []);
+
 
   const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
+
+  if (isLoading) {
+    return <Loader />;
+  }
 
   return (
     <div className="app">
       <Background />
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main>
-        <div data-aos="fade-up"><Hero /></div>
+        <Hero />
         <About />
-        <div data-aos="fade-up" data-aos-delay="200"><Work /></div>
-        <div data-aos="fade-up"><Experience /></div>
-        <div data-aos="fade-up"><Education /></div>
-        <div data-aos="fade-up"><Skills /></div>
-        <div data-aos="fade-up"><Contact /></div>
+        <Work />
+        <Experience />
+        <Skills />
+        <Education />
+        <Contact />
       </main>
       <footer className="footer-bar glass">
         <div className="footer-container">

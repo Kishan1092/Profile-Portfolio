@@ -108,8 +108,8 @@ ul {
 
 .glass {
   background: var(--surface-color-glass);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: 1px solid var(--border-color);
 }
 

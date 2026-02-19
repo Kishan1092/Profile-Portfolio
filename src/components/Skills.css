@@ -25,8 +25,8 @@
     padding: 3.5rem;
     border-radius: 40px;
     background: var(--surface-color-glass);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border: 1px solid var(--border-color);
     transition: var(--transition-smooth);
     display: flex;

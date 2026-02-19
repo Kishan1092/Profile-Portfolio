@@ -37,7 +37,6 @@ const Experience = () => {
                         <div
                             key={index}
                             className="experience-item glass"
-                            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
                         >
                             <div className="exp-side">
                                 <span className="exp-period">{exp.period}</span>

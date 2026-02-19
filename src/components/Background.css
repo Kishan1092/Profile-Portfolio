@@ -8,7 +8,8 @@
     background-color: var(--bg-color);
     overflow: hidden;
     pointer-events: none;
-    animation: bg-hue-shift 30s infinite alternate linear, fade-in 2s ease-out;
+    /* Removed heavy hue-shift from top-level container */
+    animation: fade-in 1.5s ease-out;
 }
 
 @keyframes fade-in {
@@ -31,25 +32,22 @@
     }
 }
 
-/* Noise Texture Overlay */
+/* Noise Texture Overlay - Removed for performance as SVG turbulence is heavy */
 .bg-noise {
-    position: absolute;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    opacity: 0.03;
-    z-index: 2;
-    pointer-events: none;
+    display: none;
 }
 
 /* Animated Atmospheric Blobs */
 .bg-blob {
     position: absolute;
-    width: 50vw;
-    height: 50vw;
-    filter: blur(140px);
-    opacity: 0.15;
+    width: 45vw;
+    height: 45vw;
+    filter: blur(80px);
+    /* Reduced blur for performance */
+    opacity: 0.12;
     border-radius: 50%;
-    transition: all 0.5s ease-in-out;
+    will-change: transform;
+    /* Hardware acceleration hint */
 }
 
 .blob-1 {
@@ -97,7 +95,7 @@
 .vector {
     position: absolute;
     color: white;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.1));
+    will-change: transform;
 }
 
 .vector-1 {
@@ -186,37 +184,29 @@
     position: absolute;
     inset: 0;
     background-image:
-        linear-gradient(rgba(148, 163, 184, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(148, 163, 184, 0.03) 1px, transparent 1px);
-    background-size: 80px 80px;
-    mask-image: radial-gradient(circle at center, black, transparent 90%);
-    -webkit-mask-image: radial-gradient(circle at center, black, transparent 90%);
-    animation: grid-shift 120s infinite linear;
+        linear-gradient(rgba(148, 163, 184, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.02) 1px, transparent 1px);
+    background-size: 100px 100px;
+    mask-image: radial-gradient(circle at center, black, transparent 95%);
+    -webkit-mask-image: radial-gradient(circle at center, black, transparent 95%);
 }
 
+/* Scanline - Removed for performance */
 .bg-scanline {
-    position: absolute;
-    top: -100px;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to bottom, transparent, rgba(249, 115, 22, 0.02), transparent);
-    z-index: 3;
-    animation: scan 15s infinite linear;
+    display: none;
 }
 
 /* Keyframes */
+/* Reduced morph complexity */
 @keyframes morph {
-    0% {
-        border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+
+    0%,
+    100% {
+        border-radius: 40% 60%;
     }
 
     50% {
-        border-radius: 60% 40% 40% 60% / 60% 60% 40% 40%;
-    }
-
-    100% {
-        border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+        border-radius: 60% 40%;
     }
 }
 

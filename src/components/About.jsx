@@ -70,13 +70,13 @@ const About = () => {
         <section id="about-me" className="about-section">
             <div className="container">
                 <div className="about-grid">
-                    <div className="about-header" data-aos="fade-up">
+                    <div className="about-header">
                         <h2 className="section-title">About <span className="text-gradient">Me</span></h2>
                         <div className="title-underline"></div>
                     </div>
 
                     <div className="about-content">
-                        <div className="about-text-wrapper" data-aos="fade-right">
+                        <div className="about-text-wrapper">
                             <p className="about-p lead">
                                 I am a <span className="text-white">Senior UI/UX Designer and Product Designer</span> with over 6 years of experience delivering complex fintech, BFSI, e-commerce, and enterprise digital products.
                             </p>
@@ -103,19 +103,19 @@ const About = () => {
                         </div>
 
                         <div className="about-stats">
-                            <div className="stat-card glass anim-hover" data-aos="zoom-in" data-aos-delay="300">
+                            <div className="stat-card glass anim-hover">
                                 <span className="stat-number">
                                     <CountUp end={10} suffix="+" />
                                 </span>
                                 <span className="stat-label">Years Total Exp.</span>
                             </div>
-                            <div className="stat-card glass secondary anim-hover" data-aos="zoom-in" data-aos-delay="500">
+                            <div className="stat-card glass secondary anim-hover">
                                 <span className="stat-number">
                                     <CountUp end={6} suffix="+" />
                                 </span>
                                 <span className="stat-label">UI/UX Specialty</span>
                             </div>
-                            <div className="stat-card glass accent anim-hover" data-aos="zoom-in" data-aos-delay="700">
+                            <div className="stat-card glass accent anim-hover">
                                 <span className="stat-number">
                                     <CountUp end={15} suffix="+" />
                                 </span>

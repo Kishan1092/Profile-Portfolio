@@ -44,8 +44,6 @@ const Work = () => {
                         <div
                             key={index}
                             className="project-card glass"
-                            data-aos="zoom-in"
-                            data-aos-delay={index * 100}
                         >
                             <div className="project-image">
                                 <img src={project.image} alt={project.title} />
