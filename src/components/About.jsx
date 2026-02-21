@@ -78,27 +78,27 @@ const About = () => {
                     <div className="about-content">
                         <div className="about-text-wrapper">
                             <p className="about-p lead">
-                                I am a <span className="text-white">Senior UI/UX Designer and Product Designer</span> with over 6 years of experience delivering complex fintech, BFSI, e-commerce, and enterprise digital products.
+                                I am a <span className="text-white">Senior UI/UX & Product Designer</span> with a distinguished <span className="text-white">6+ year track record</span> of architecting high-impact digital products across the fintech, BFSI, e-commerce, and enterprise sectors.
                             </p>
 
                             <p className="about-p">
-                                My expertise lies in designing secure, scalable, and conversion-focused experiences for both regulation-driven platforms and high-traffic consumer applications, including <span className="text-white">digital onboarding, KYC, loan origination systems (LOS)</span>, and end-to-end shopping journeys.
+                                My core expertise lies in orchestrating secure, scalable, and conversion-optimized experiences tailored for complex regulatory environments and high-volume consumer applications. I have deep domain knowledge in <span className="text-white">frictionless digital onboarding, comprehensive KYC flows, loan origination systems (LOS)</span>, and sophisticated end-to-end commerce journeys.
                             </p>
 
                             <p className="about-p">
-                                I leverage <span className="text-white">AI-assisted design tools</span> and data-informed methodologies to accelerate ideation, optimize user flows, and enhance product outcomes. My approach combines user-centered design, scalable design systems, and strong frontend awareness to create interfaces that are not only visually refined but also technically feasible and production-ready.
+                                By integrating <span className="text-white">advanced AI-assisted design workflows</span> with rigorous, data-informed strategies, I accelerate product ideation while ensuring flawless user journeys. I build robust, scalable design systems championed by a strong understanding of frontend architecture, guaranteeing that my designs are not only visually stunning but technically sound and production-ready.
                             </p>
 
                             <p className="about-p">
-                                Beyond financial platforms, I design growth-oriented experiences such as product discovery, search and filtering, checkout optimization, and mobile-first interactions that improve engagement, conversion rates, and overall business performance.
+                                Beyond core financial platforms, I specialize in engineering growth-centric features—product discovery, intelligent search filtering, and mobile-first checkout optimization—that consistently drive user engagement, maximize conversion rates, and catalyze business growth.
                             </p>
 
                             <p className="about-p">
-                                Throughout my career, I have led end-to-end design initiatives from <span className="text-white">discovery and research to prototyping, validation, and launch</span>. My work emphasizes accessibility, performance, scalability, and long-term product value.
+                                I have a proven history of spearheading end-to-end product design lifecycles, leading multifaceted initiatives spanning from <span className="text-white">in-depth research and strategic prototyping to rigorous validation and successful market launch</span>. My work is fundamentally rooted in accessibility, sustainable performance, and long-term product viability.
                             </p>
 
                             <p className="about-p final">
-                                I am passionate about building intelligent, user-centric digital products that solve real problems, drive business growth, and scale effectively across organizations and global markets.
+                                I am intrinsically motivated to build intelligent, beautifully crafted digital ecosystems that solve complex problems, empower users, and deliver profound business value on a global scale.
                             </p>
                         </div>
 

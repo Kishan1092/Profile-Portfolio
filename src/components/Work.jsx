@@ -28,6 +28,13 @@ const projects = [
         description: "A highly optimized fintech journey for credit card applications, focusing on conversion rates and a frictionless user experience from application to approval.",
         image: "/au-credit-card.png",
         link: "https://cconboarding.au.bank.in/auccself/#/landing"
+    },
+    {
+        title: "DBS digibank Savings Account",
+        category: "Digital Onboarding Journey",
+        description: "A streamlined digital onboarding experience for DBS digibank, offering seamless account opening, secure authentication, and a modern, user-centric interface.",
+        image: "/dbs-account.png",
+        link: "https://www.dbs.bank.in/in/getaccount/#/signup"
     }
 ];
 
@@ -37,7 +44,7 @@ const Work = () => {
             <div className="container">
                 <div className="section-header animate-in">
                     <h2 className="section-title">Selected <span className="text-gradient">Work</span></h2>
-                    <p className="section-subtitle">Projects that showcase how ideas are transformed into clear, effective, and user-focused solutions through careful planning and execution, integrating intelligent AI capabilities with thoughtful design to create experiences that are both innovative and intuitive.</p>
+                    <p className="section-subtitle">A curated selection of high-impact digital products, showcasing my ability to transform complex business requirements—across Fintech, BFSI, and Enterprise SaaS—into elegant, scalable, and conversion-optimized user experiences.</p>
                 </div>
                 <div className="projects-grid">
                     {projects.map((project, index) => (
