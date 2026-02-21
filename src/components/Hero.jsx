@@ -78,46 +78,18 @@ const Hero = () => {
                 <div className="hero-main-grid">
                     <div className="hero-text-side">
                         <div className="hero-badge">Senior UI/UX Designer | Product Designer | Fintech & AI-Driven Platforms.</div>
-                        <h1 className="hero-title">
-                            Hi, I'm <span className="text-gradient">Kishan Tiwari</span>
+                        <h1 className="hero-title" style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', lineHeight: '1.1', marginBottom: '1.5rem', display: 'block' }}>
+                            Senior UI/UX Designer building <span className="text-gradient">Fintech & AI-driven</span> products that simplify complex systems.
                         </h1>
-                        <div className="typewriter-row">
-                            <span className="static-text">I architect</span>
-                            <span className="dynamic-text">
-                                <Typewriter
-                                    options={{
-                                        strings: [
-                                            'scalable product ecosystems.',
-                                            'intelligent user experiences.',
-                                            'design-to-delivery workflows.',
-                                            'complex business solutions.'
-                                        ],
-                                        autoStart: true,
-                                        loop: true,
-                                        deleteSpeed: 30,
-                                        delay: 50,
-                                        pauseFor: 2000,
-                                        cursor: '|',
-                                        wrapperClassName: 'typewriter-wrapper',
-                                        cursorClassName: 'typewriter-cursor'
-                                    }}
-                                />
-                            </span>
-                        </div>
                         <div className="hero-description">
                             <p className="hero-subtitle">
-                                <span className="text-white">Senior UI/UX & Product Designer</span> bringing <span className="text-white">6+ years</span> of proven expertise in crafting complex digital products across <span className="text-white">Fintech, BFSI, and Enterprise SaaS</span>. Known for transforming intricate, regulation-heavy workflows—such as digital onboarding, KYC, and loan origination—into elegant, intuitive, and highly converting user journeys.
-                            </p>
-                            <p className="hero-subtitle secondary">
-                                I seamlessly blend <span className="text-white">AI-driven design methodologies</span>, scalable design systems, and deep technical acumen to bridge the gap between design and engineering. My philosophy centers on aligning user needs with strategic business objectives, ensuring flawless execution from <span className="text-white">initial discovery to final deployment</span>.
-                            </p>
-                            <p className="hero-subtitle tertiary">
-                                Dedicated to architecting <span className="text-white">accessible, performance-optimized</span>, and data-backed interfaces that consistently deliver measurable ROI and elevate the standard of digital experiences.
+                                <span className="text-white">6+ years</span> designing scalable dashboards, banking flows, and enterprise platforms. Focused on <span className="text-white">usability, business impact, and measurable growth</span>.
                             </p>
                         </div>
                         <div className="hero-actions">
-                            <a href="#work" className="btn btn-primary">View Portfolio</a>
-                            <a href="/Kishan 6 years (1).pdf" target="_blank" className="btn btn-outline">Download Resume</a>
+                            <a href="#casestudies" className="btn btn-primary">View Case Studies</a>
+                            <a href="/Kishan 6 years (1).pdf" download="Kishan_Tiwari_Resume.pdf" className="btn btn-outline">Download Resume</a>
+                            <a href="#contact" className="btn btn-outline">Contact Me</a>
                         </div>
                     </div>
                     <div className="hero-image-side">

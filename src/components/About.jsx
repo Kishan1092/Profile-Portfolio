@@ -8,6 +8,7 @@ const CountUp = ({ end, duration = 2000, suffix = "" }) => {
     const hasAnimated = useRef(false);
 
     useEffect(() => {
+        const currentRef = countRef.current;
         const observer = new IntersectionObserver(
             ([entry]) => {
                 // Trigger only if not already animated and is intersecting
@@ -19,13 +20,13 @@ const CountUp = ({ end, duration = 2000, suffix = "" }) => {
             { threshold: 0.2 } // Ensure at least 20% of the element is visible
         );
 
-        if (countRef.current) {
-            observer.observe(countRef.current);
+        if (currentRef) {
+            observer.observe(currentRef);
         }
 
         return () => {
-            if (countRef.current) {
-                observer.unobserve(countRef.current);
+            if (currentRef) {
+                observer.unobserve(currentRef);
             }
         };
     }, []);

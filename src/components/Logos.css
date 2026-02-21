@@ -1,0 +1,119 @@
+.logos-section {
+    padding: 4rem 0 3rem 0;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    background: rgba(15, 23, 42, 0.2);
+}
+
+[data-theme='light'] .logos-section {
+    background: rgba(248, 250, 252, 0.5);
+}
+
+.logos-title {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+}
+
+.logos-container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    /* Create a fade out mask on edges */
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.logos-track {
+    display: flex;
+    width: max-content;
+    gap: 2.5rem;
+    animation: marquee-scroll 50s linear infinite;
+    padding-left: 2.5rem;
+}
+
+.logos-track:hover {
+    animation-play-state: paused;
+}
+
+.logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 2.5rem;
+    border-radius: 16px;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    transition: var(--transition-smooth);
+}
+
+.logo-item:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-4px);
+    box-shadow: var(--card-shadow-hover);
+    background: var(--surface-color-glass);
+}
+
+.logo-text {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    opacity: 0.6;
+    transition: var(--transition-smooth);
+}
+
+.logo-item:hover .logo-text {
+    opacity: 1;
+    color: var(--primary-color);
+}
+
+.company-logo-img {
+    height: 38px;
+    width: auto;
+    max-width: 130px;
+    object-fit: contain;
+    /* In dark mode: wash out all color to pure white, then dim */
+    filter: grayscale(100%) brightness(0) invert(1) opacity(0.5);
+    transition: var(--transition-smooth);
+}
+
+[data-theme='light'] .company-logo-img {
+    /* In light mode: wash out to pure black, then dim */
+    filter: grayscale(100%) brightness(0) opacity(0.5);
+}
+
+.logo-item:hover .company-logo-img {
+    /* On hover: revert all filters to show actual vibrant brand colors */
+    filter: none;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+@keyframes marquee-scroll {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .logos-section {
+        padding: 3rem 0 2rem 0;
+    }
+
+    .logo-item {
+        padding: 1rem 1.75rem;
+        border-radius: 12px;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+    }
+}

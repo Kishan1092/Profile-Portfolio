@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Logos from './components/Logos';
 import About from './components/About';
 import Work from './components/Work';
 import CaseStudy from './components/CaseStudy';
@@ -8,6 +9,7 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Contact from './components/Contact';
+import Testimonials from './components/Testimonials';
 import Background from './components/Background';
 import Loader from './components/Loader';
 import './App.css';
@@ -46,12 +48,14 @@ function App() {
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main>
         <Hero />
+        <Logos />
         <About />
         <Work />
         <CaseStudy />
         <Experience />
         <Skills />
         <Education />
+        <Testimonials />
         <Contact />
       </main>
       <footer className="footer-bar glass">
