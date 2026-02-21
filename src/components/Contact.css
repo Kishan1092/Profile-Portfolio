@@ -1,5 +1,5 @@
 .contact {
-    padding: 1rem 0 6rem;
+    padding: 4rem 9rem;
     transition: var(--transition-smooth);
 }
 
@@ -21,11 +21,24 @@
     margin: 0 auto;
 }
 
-.contact-card .section-title {
-    font-size: clamp(2.2rem, 6vw, 4rem);
+.contact-heading-group {
     margin-bottom: 2rem;
+}
+
+.contact-eyebrow {
+    display: inline-block;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 1.5rem;
+}
+
+.contact-card .section-title {
+    font-size: clamp(2.2rem, 6vw, 3.8rem);
+    margin-bottom: 0;
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.15;
 }
 
 .contact-card .section-subtitle {
@@ -91,9 +104,15 @@
     pointer-events: none;
 }
 
+@media (max-width: 1024px) {
+    .contact {
+        padding: 4rem 2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .contact {
-        padding: 1rem 1rem;
+        padding: 1rem 0;
     }
 
     .contact-card {
