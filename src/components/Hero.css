@@ -28,8 +28,7 @@
 }
 
 .hero-badge {
-    display: inline-flex;
-    align-items: center;
+    display: inline-block;
     background: var(--primary-glow);
     color: var(--primary-color);
     padding: 0.6rem 1.2rem;
@@ -39,7 +38,8 @@
     margin-bottom: 2rem;
     border: 1px solid var(--border-color);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 1.5;
 }
 
 .hero-title {
@@ -83,6 +83,8 @@
         justify-content: center;
         width: 100%;
         gap: 0.5rem;
+        flex-wrap: wrap;
+        height: auto;
     }
 
     .dynamic-text {
@@ -272,9 +274,63 @@
         padding-top: 100px;
     }
 
+    .hero-main-grid {
+        gap: 1.5rem;
+    }
+
+    .profile-image-container {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 0px;
+    }
+
+    .hero-badge {
+        border-radius: 12px;
+        font-size: 0.65rem;
+        padding: 0.6rem 0.8rem;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 340px;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+
+    .typewriter-row {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 0.2rem;
+    }
+
+    .dynamic-text {
+        min-width: unset;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        font-size: 0.88rem;
+        line-height: 1.6;
+        margin-bottom: 1.25rem;
+    }
+
     .hero-actions {
         flex-direction: column;
         width: 100%;
+        gap: 0.8rem;
     }
 
     .hero-actions .btn {

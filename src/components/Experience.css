@@ -84,10 +84,24 @@
     .experience-item {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-        padding: 2.5rem;
+        padding: 2rem;
     }
 
     .exp-role {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-item {
+        padding: 1.5rem;
+    }
+
+    .exp-company {
+        font-size: 1rem;
+    }
+
+    .exp-desc {
+        font-size: 0.95rem;
     }
 }

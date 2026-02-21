@@ -11,7 +11,7 @@
 
 .education-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(300px, 100%, 400px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(clamp(280px, 100%, 400px), 1fr));
     gap: 2rem;
     max-width: 100%;
     margin: 0 auto;
@@ -63,10 +63,20 @@
     }
 
     .education-card {
-        padding: 2.5rem 2rem;
+        padding: 2rem 1.5rem;
     }
 
     .edu-degree {
         font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-card {
+        padding: 1.5rem;
+    }
+
+    .edu-degree {
+        font-size: 1.25rem;
     }
 }

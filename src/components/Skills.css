@@ -6,7 +6,7 @@
 
 .skills .section-header {
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -15,7 +15,8 @@
 .skills-grid-modern {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 2.5rem;
+    gap: 1.5rem;
+    margin-bottom: 24px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -124,8 +125,15 @@
 }
 
 @media (max-width: 1100px) {
+    .skills-grid-modern {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
     .skill-category-card {
-        grid-column: span 12;
+        grid-column: auto;
+        width: 100%;
     }
 }
 
@@ -141,6 +149,27 @@
     .skill-tags,
     .skill-list-items {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills {
+        padding: 3rem 0;
+    }
+
+    .skill-category-card {
+        padding: 1.5rem 1.25rem;
+        border-radius: 24px;
+    }
+
+    .category-title {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .skill-tag {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
     }
 }
 

@@ -136,3 +136,13 @@
         font-size: 1.15rem;
     }
 }
+
+@media (max-width: 480px) {
+    .stat-card {
+        padding: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+}
