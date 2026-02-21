@@ -30,6 +30,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             <li><a href="#hero" data-text="Home" onClick={() => setIsMenuOpen(false)}>Home</a></li>
             <li><a href="#about-me" data-text="About" onClick={() => setIsMenuOpen(false)}>About</a></li>
             <li><a href="#work" data-text="Work" onClick={() => setIsMenuOpen(false)}>Work</a></li>
+            <li><a href="#casestudies" data-text="Case Studies" onClick={() => setIsMenuOpen(false)}>Case Studies</a></li>
             <li><a href="#experience" data-text="Experience" onClick={() => setIsMenuOpen(false)}>Experience</a></li>
             <li><a href="#skills" data-text="Superpowers" onClick={() => setIsMenuOpen(false)}>Superpowers</a></li>
           </ul>

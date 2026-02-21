@@ -1,0 +1,240 @@
+.case-studies {
+    padding: 2rem 0;
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.case-studies .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.case-studies .section-subtitle {
+    margin-top: 1rem;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.case-studies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(280px, 100%, 450px), 1fr));
+    gap: 3rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.case-study-card {
+    position: relative;
+    border-radius: 32px;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+
+.case-study-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    filter: blur(80px);
+    z-index: 0;
+}
+
+.case-study-card:hover .case-study-glow {
+    opacity: 0.15;
+}
+
+.case-study-content {
+    position: relative;
+    z-index: 1;
+    padding: 3rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    background: var(--surface-color-glass);
+    border: 1px solid var(--border-color);
+    transition: var(--transition-smooth);
+}
+
+.case-study-card:hover .case-study-content {
+    transform: translateY(-8px);
+    border-color: var(--primary-color);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.case-study-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
+}
+
+.case-study-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.case-study-desc {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.case-study-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.case-study-tag {
+    background: var(--surface-color);
+    color: var(--text-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid var(--border-color);
+}
+
+[data-theme='light'] .case-study-tag {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.case-study-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.case-study-btn {
+    flex-grow: 1;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+}
+
+.case-study-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.case-study-btn:hover svg {
+    transform: translateX(4px);
+}
+
+.icon-only-btn {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+    .case-studies .section-header {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .case-studies {
+        padding: 1rem 0;
+    }
+
+    .case-studies-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .case-study-content {
+        padding: 2.5rem;
+    }
+
+    .case-study-title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .case-studies-grid {
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+    }
+
+    .case-study-content {
+        padding: 1.5rem 1.25rem;
+        border-radius: 24px;
+    }
+
+    .case-study-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 1.25rem;
+        border-radius: 12px;
+    }
+
+    .case-study-title {
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .case-study-desc {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .case-study-tags {
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .case-study-tag {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
+
+    .case-study-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .case-study-btn,
+    .icon-only-btn {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .icon-only-btn {
+        padding: 0.8rem;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .icon-only-btn::after {
+        content: 'Download PDF';
+        font-family: var(--font-heading);
+        font-weight: 600;
+        font-size: 0.85rem;
+    }
+}
