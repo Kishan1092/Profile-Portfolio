@@ -174,7 +174,7 @@ const FintechOnboardingCaseStudy = ({ onClose }) => {
                                 </ul>
                             </div>
                             <div className="solution-media media-box" style={{backgroundColor: '#f8fafc', padding: 0, overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Form Unrolling" style={{width: '100%', height: '100%', objectFit: 'cover', margin: 0}} />
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Form Unrolling" style={{width: '100%', height: '100%', objectFit: 'cover', margin: 0}} width="600" height="400" />
                             </div>
                         </div>
                     </div>

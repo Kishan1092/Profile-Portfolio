@@ -117,7 +117,7 @@ const Work = () => {
                                 {/* Visual Side */}
                                 <div className="project-visual-side glass">
                                     <div className="project-image-wrapper">
-                                        <img src={project.image} alt={project.title} loading="lazy" />
+                                        <img src={project.image} alt={project.title} loading="lazy" width="800" height="500" />
                                     </div>
                                     <div className="project-image-backdrop"></div>
                                 </div>

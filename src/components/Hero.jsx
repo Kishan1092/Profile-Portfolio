@@ -100,7 +100,7 @@ const Hero = () => {
                                     <circle cx="200" cy="200" r="180" stroke="var(--secondary-color)" strokeWidth="0.5" strokeDasharray="5 15" opacity="0.2" />
                                 </svg>
                             </div>
-                            <img src="/profile.png" alt="Kishan Tiwari" className="profile-image" />
+                            <img src="/profile.png" alt="Kishan Tiwari" className="profile-image" width="400" height="400" />
                             <div className="image-glow"></div>
                         </div>
                     </div>

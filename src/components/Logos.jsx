@@ -28,6 +28,8 @@ const LogoItem = ({ company }) => {
                     alt={company.name}
                     className="company-logo-img"
                     loading="lazy"
+                    width="128"
+                    height="128"
                     onError={() => setImgError(true)}
                 />
             ) : (

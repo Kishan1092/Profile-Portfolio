@@ -56,7 +56,7 @@ const Testimonials = () => {
                                     {test.name.charAt(0)}
                                 </div>
                                 <div className="testimonial-author">
-                                    <h4 className="author-name">{test.name}</h4>
+                                    <h3 className="author-name">{test.name}</h3>
                                     <span className="author-company">{test.company}</span>
                                 </div>
                             </div>
