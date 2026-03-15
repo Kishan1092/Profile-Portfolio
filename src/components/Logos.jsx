@@ -2,10 +2,11 @@ import { useState } from 'react';
 import './Logos.css';
 
 const LOGOS = [
+    { name: "Federal Bank", domain: "federalbank.co.in" },
+    { name: "Bandhan Bank", domain: "bandhanbank.com" },
     { name: "HDFC Bank", domain: "hdfcbank.com" },
     { name: "Axis Bank", domain: "axisbank.com" },
     { name: "SBI", domain: "sbi.co.in" },
-    { name: "Bandhan Bank", domain: "bandhanbank.com" },
     { name: "ESAF Bank", domain: "esafbank.com" },
     { name: "Canara Bank", domain: "canarabank.com" },
     { name: "AU Small Finance", domain: "aubank.in" },

@@ -83,7 +83,7 @@ const Hero = () => {
                         </h1>
                         <div className="hero-description">
                             <p className="hero-subtitle">
-                                <span className="text-white">6+ years</span> designing scalable dashboards, banking flows, and enterprise platforms. Focused on <span className="text-white">usability, business impact, and measurable growth</span>.
+                                <span className="text-white">6+ years</span> designing scalable dashboards, digital onboarding flows, loan platforms, and enterprise solutions. Skilled in <span className="text-white">AI-assisted design, Vibe Coding, and Antigravity</span>, I focus on usability, measurable business impact, and seamless collaboration with engineering teams.
                             </p>
                         </div>
                         <div className="hero-actions">

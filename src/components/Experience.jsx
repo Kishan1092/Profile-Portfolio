@@ -5,7 +5,7 @@ const experiences = [
         role: "Senior Product Designer",
         company: "Decimal Technologies Pvt. Ltd.",
         period: "07/2021 – Present",
-        description: "Leading end-to-end product design for high-scale Fintech solutions (HDFC, Canara Bank, AU Small Finance). Successfully integrated AI-driven design workflows using Figma AI and FigJam to accelerate discovery cycles by 30%. Architecting scalable Design Systems and complex user journeys for compliance-heavy platforms, ensuring WCAG 2.1 accessibility and seamless hand-off to engineering teams. Collaborating directly with stakeholders to align UX strategy with business KPIs and technical feasibility."
+        description: "Leading end-to-end product design for high-scale Fintech solutions (HDFC, Canara Bank, AU Small Finance). Successfully integrated AI-driven design workflows using Figma AI, FigJam, and Figma Maker to accelerate discovery and prototyping by 30%. Leveraging Vibe Coding and Antigravity, I convert design concepts into production-ready UI components, enabling faster hand-offs and close collaboration with engineering teams.\n\nArchitecting scalable Design Systems and complex user journeys for compliance-heavy platforms while ensuring WCAG 2.1 accessibility. Partnering directly with stakeholders to align UX strategy with business KPIs and technical feasibility, simplifying complex workflows like digital onboarding, KYC verification, and loan origination. Focused on building AI-assisted, user-first Fintech experiences that are scalable, consistent, and high-impact."
     },
     {
         role: "Product Designer & Full Stack Lead",
@@ -44,7 +44,11 @@ const Experience = () => {
                             <div className="exp-main">
                                 <h3 className="exp-role">{exp.role}</h3>
                                 <p className="exp-company">{exp.company}</p>
-                                <p className="exp-desc">{exp.description}</p>
+                                {exp.description.split('\n\n').map((paragraph, i) => (
+                                    <p key={i} className="exp-desc" style={{ marginBottom: i < exp.description.split('\n\n').length - 1 ? '1rem' : '0' }}>
+                                        {paragraph}
+                                    </p>
+                                ))}
                             </div>
                         </div>
                     ))}
