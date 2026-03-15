@@ -103,31 +103,34 @@ const About = () => {
                         <div className="typography-block">
                             <h3 className="section-label-small">The Introduction</h3>
                             <p className="premium-p intro-p">
-                                I am a <strong>Senior UI/UX & Product Designer</strong> with a 6+ year track record of architecting high-impact digital products across Fintech, BFSI, e-commerce, and enterprise platforms.
+                                <strong>Senior UI/UX and Product Designer</strong> with 6+ years of experience designing fintech and enterprise digital products for banks, NBFCs, and government platforms. I have worked on large-scale digital banking solutions used by major financial institutions including HDFC Bank, Federal Bank, Bandhan Bank, AU Small Finance Bank, Canara Bank, DBS Bank, IDBI Bank, Karnataka Bank, UNO Bank, and NUCFDC.
                             </p>
                         </div>
 
                         <div className="typography-block">
                             <h3 className="section-label-small">The Expertise</h3>
                             <p className="premium-p">
-                                My core expertise lies in orchestrating secure, scalable, and conversion-optimized experiences for complex regulatory environments and high-volume applications. I have deep domain knowledge in <span className="highlight-text">frictionless digital onboarding, end-to-end KYC flows, loan origination systems (LOS)</span>, and enterprise commerce journeys.
+                                My expertise lies in end-to-end product design, including UX research, information architecture, user journey mapping, wireframing, interactive prototyping, and usability testing. I specialize in designing complex financial workflows such as <span className="highlight-text">digital onboarding, KYC verification flows, savings account journeys, credit card applications, and Loan Origination Systems (LOS)</span> within compliance-driven banking ecosystems.
                             </p>
                         </div>
 
                         <div className="typography-block">
                             <h3 className="section-label-small">The Methodology</h3>
                             <p className="premium-p">
-                                By integrating <span className="highlight-text">AI-assisted design workflows, Vibe Coding, and Antigravity</span>, I accelerate ideation and prototyping while ensuring flawless, production-ready user journeys. I build robust, scalable design systems informed by strong frontend architecture, ensuring designs are visually polished, technically sound, and seamlessly implemented in Angular with API integration.
+                                Throughout my career, I have focused on simplifying complex financial processes and improving usability for enterprise platforms used by thousands of users across banking and financial services. My work includes designing scalable design systems aligned with React Material UI, enabling consistent UI patterns and seamless collaboration between design and engineering teams.
                             </p>
                             <p className="premium-p">
-                                Beyond financial platforms, I specialize in growth-centric features—product discovery, intelligent search filtering, and mobile-first checkout optimization—that consistently drive engagement, conversion, and measurable business impact.
+                                I actively leverage <span className="highlight-text">AI-assisted design workflows, Figma AI, and GenAI-powered research</span> to accelerate UX exploration. I also experiment with vibe coding techniques and Antigravity-powered tools to rapidly prototype product ideas, test concepts, and explore innovative design solutions for modern digital platforms.
                             </p>
                         </div>
 
                         <div className="typography-block no-border-bottom">
-                            <h3 className="section-label-small">The Ownership</h3>
+                            <h3 className="section-label-small">The Approach</h3>
                             <p className="premium-p">
-                                I have a proven history of <strong>leading end-to-end product design lifecycles</strong>, from research and strategic prototyping to validation and successful launch. My work is grounded in accessibility, sustainable performance, and long-term product viability, creating intelligent, user-first digital ecosystems that solve complex problems and deliver global business value.
+                                My approach combines product thinking, user-centered design, and a technical understanding of frontend development. This allows me to translate design intent into production-ready responsive interfaces while ensuring accessibility, usability, and performance.
+                            </p>
+                            <p className="premium-p">
+                                I enjoy collaborating with product managers, developers, and cross-functional teams to deliver high-impact digital experiences that solve real business problems and improve user satisfaction across digital banking and enterprise ecosystems.
                             </p>
                         </div>
                     </div>

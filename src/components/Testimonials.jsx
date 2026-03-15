@@ -26,9 +26,22 @@ const Testimonials = () => {
     return (
         <section id="testimonials" className="testimonials">
             <div className="container">
-                <div className="section-header animate-in">
-                    <h2 className="section-title">Industry <span className="text-gradient">Endorsements</span></h2>
-                    <p className="section-subtitle">Working directly with senior leadership, engineering teams, and stakeholders to deliver enterprise-grade products.</p>
+                <div className="section-header-wrapper">
+                    <div className="floating-icons-bg">
+                        <svg className="anim-icon icon-circle" viewBox="0 0 50 50" aria-hidden="true">
+                            <circle cx="25" cy="25" r="20" fill="none" stroke="var(--primary-color)" strokeWidth="1.5" strokeOpacity="0.5" strokeDasharray="4 4" />
+                        </svg>
+                        <svg className="anim-icon icon-square" viewBox="0 0 50 50" aria-hidden="true">
+                            <rect x="10" y="10" width="30" height="30" fill="none" stroke="var(--secondary-color)" strokeWidth="1.5" strokeOpacity="0.4" transform="rotate(45 25 25)" />
+                        </svg>
+                        <svg className="anim-icon icon-triangle" viewBox="0 0 60 60" aria-hidden="true">
+                            <polygon points="30,10 50,45 10,45" fill="none" stroke="var(--text-primary)" strokeWidth="1.5" strokeOpacity="0.2" />
+                        </svg>
+                    </div>
+                    <div className="section-header center-align animate-in relative-z">
+                        <h2 className="section-title">Industry <span className="text-gradient">Endorsements</span></h2>
+                        <p className="section-subtitle">Trusted by senior leadership, engineering teams, and key stakeholders to deliver enterprise-grade digital products. Recognized for combining strategic UX insight, technical execution, and collaborative problem-solving to drive measurable business impact.</p>
+                    </div>
                 </div>
 
                 <div className="testimonials-grid">

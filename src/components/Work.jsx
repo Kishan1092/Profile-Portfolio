@@ -1,135 +1,59 @@
 import './Work.css';
-import { ExternalLink, CheckCircle2 } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import hdfcImage from '../assets/hdfc.png';
 
 const projects = [
     {
-        title: "AI-Driven Enterprise Fintech Dashboard",
-        category: "Product Strategy & Enterprise UX",
-        role: "Lead Product Designer",
-        duration: "8 months",
-        team: "2 PMs, 6 Developers, 1 Data Scientist",
-        problem: "Financial analysts were overwhelmed by scattered data sources, making risk assessment and trend prediction unacceptably slow and error-prone.",
-        approach: [
-            "Orchestrated cross-functional workshops to define the Product Strategy",
-            "Conducted ethnographic research on cognitive load in high-stress Fintech trading",
-            "Designed a modular, scalable Enterprise UX component system",
-            "Integrated a predictive AI-Driven insights engine to flag anomalies instantly"
-        ],
-        solution: "A unified, AI-enhanced centralized Dashboard that empowers stakeholders with real-time analytics and frictionless decision-making capabilities.",
-        impact: [
-            "Reduced critical data-retrieval time for analysts by 60%",
-            "Increased anomaly detection accuracy by 45% using AI models",
-            "Successfully deployed to 3 major enterprise-tier clients in Q1"
-        ],
+        number: "01",
+        title: "Enterprise AI Telemetry Dashboard",
+        client: "Vahana Cloud",
+        description: "Reimagined the risk-assessment experience for financial analysts. Engineered a customized telemetry interface that visualizes predictive AI models in real-time, effectively eliminating data-scatter fatigue and accelerating critical decision-making.",
+        tags: ["Data Visualization", "FinOps", "Predictive AI"],
         image: "/vahana-cloud.png",
         link: "https://accounts.vahanacloud.com/#/vwv/v1"
     },
     {
-        title: "Digital Onboarding Journey",
-        category: "DBS digibank",
-        role: "Lead Product Designer",
-        duration: "3 months",
-        team: "2 PMs, 4 Developers, 1 UX Researcher",
-        problem: "High drop-off rate during savings account creation due to complex forms and confusing KYC processes.",
-        approach: [
-            "Analyzed drop-off points via Google Analytics",
-            "Simplified multi-step forms into bite-sized processes",
-            "Designed rapid video-KYC user flow",
-            "Iterated visuals via A/B testing"
-        ],
-        solution: "A streamlined digital onboarding experience offering seamless account opening and secure, modern authentication.",
-        impact: [
-            "Increased account opening completion by 42%",
-            "Reduced time-to-onboard from 15 mins to 4 mins",
-            "Boosted customer satisfaction score by 20%"
-        ],
+        number: "02",
+        title: "Frictionless Digibank Onboarding",
+        client: "DBS digibank",
+        description: "Transformed a complex, regulatory-heavy compliance process into a liquid-smooth 4-minute digital journey. By implementing behavioral nudges and progressive disclosure, we drastically lowered cognitive load and recaptured lost account conversions.",
+        tags: ["CRO", "Digital KYC", "Consumer Banking"],
         image: "/dbs-account.png",
         link: "https://www.dbs.bank.in/in/getaccount/#/signup"
     },
     {
-        title: "Manuscript Digitization & GenAI platform",
-        category: "Gyan Bharatam - Ministry of Culture",
-        role: "Senior UI/UX Designer",
-        duration: "6 months",
-        team: "1 PM, 5 Developers, 2 NLP Engineers",
-        problem: "Historic manuscripts were inaccessible to researchers and the public, lacking searchable and translation tools.",
-        approach: [
-            "Collaborated with historians for needs analysis",
-            "Mapped out data-heavy curation flows",
-            "Designed intelligent search interfaces",
-            "Built accessibility-first systems"
-        ],
-        solution: "A digital initiative to preserve heritage featuring robust manuscript catalogs and interactive GenAI-powered translations.",
-        impact: [
-            "Digitized access to over 50k documents",
-            "Increased platform engagement time by 45%",
-            "Adopted by major university researchers"
-        ],
+        number: "03",
+        title: "National Cultural Archive & GenAI",
+        client: "Ministry of Culture",
+        description: "Spearheaded the UX architecture for a massive heritage preservation initiative. Integrated advanced Natural Language Processing interfaces to seamlessly capture, translate, and search 50,000+ historical manuscripts for global researchers.",
+        tags: ["Platform UI", "GovTech", "NLP Integration"],
         image: "/gyanbharatam.png",
         link: "https://gyanbharatam.com/"
     },
     {
-        title: "Digital Onboarding & KYC",
-        category: "AU Savings Account",
-        role: "Senior UI/UX Designer",
-        duration: "3 months",
-        team: "1 PM, 4 Developers",
-        problem: "Account adoption was low due to friction in traditional KYC checks and lengthy onboarding forms.",
-        approach: [
-            "Conducted competitive flow analysis",
-            "Designed instant video KYC integrations",
-            "Built dynamic form designs to minimize cognitive load"
-        ],
-        solution: "A seamless digital onboarding journey for savings accounts, featuring instant KYC and a user-centric interface.",
-        impact: [
-            "Reduced onboarding time by 50%",
-            "Increased month-over-month creation by 28%",
-            "High user satisfaction score via in-app feedback"
-        ],
+        number: "04",
+        title: "High-Velocity Account Pipeline",
+        client: "AU Small Finance Bank",
+        description: "Engineered a consumer-facing banking flow that prioritizes trust and velocity. Introduced instantaneous Video KYC verification and fluid data hand-offs, obliterating traditional drop-off points in mobile-first applications.",
+        tags: ["V-KYC", "Mobile-First", "Interaction Design"],
         image: "/au-savings-account.png",
         link: "https://savingsaccount.au.bank.in/saself/mobile-number?utm_campaign=homepage-stickycta&utm_medium=banner&utm_source=adobe-target"
     },
     {
-        title: "Fintech Onboarding Journey",
-        category: "AU Credit Card",
-        role: "Lead UI/UX Designer",
-        duration: "4 months",
-        team: "2 PMs, 5 Developers",
-        problem: "Credit card applicants were abandoning workflows due to confusing eligibility criteria and lengthy entry.",
-        approach: [
-            "Mapped end-to-end data funnel",
-            "Tested single-page vs multi-step architectures",
-            "Implemented clear trust signals"
-        ],
-        solution: "A highly optimized fintech journey for credit card applications, focusing on conversion rates and frictionless experience.",
-        impact: [
-            "Improved pass-through rate by 31%",
-            "Lowered bounce rate on eligibility screen",
-            "Recognized for fastest sprint-to-deploy timeline"
-        ],
+        number: "05",
+        title: "Credit Eligibility Engine",
+        client: "AU Credit Card",
+        description: "Solved critical funnel bounce-rates by abstracting rigid financial criteria behind an empathetic, progressive interface. The refined UI leverages micro-animations and clear security signals to smoothly guide applicants through approval.",
+        tags: ["Conversion Strategy", "Form UX", "A/B Testing"],
         image: "/au-credit-card.png",
         link: "https://cconboarding.au.bank.in/auccself/#/landing"
     },
     {
-        title: "HDFC Corporate Salaried Account Journey",
-        category: "Corporate Salary Account",
-        role: "Senior UI/UX Designer & Antigravity AI",
-        duration: "2 weeks",
-        team: "1 Designer, Antigravity AI Tool",
-        problem: "The enterprise BFS ecosystem required a secure, seamless platform for corporate salary account activation and investment onboarding with minimal friction.",
-        approach: [
-            "Designed the end-to-end journey and high-fidelity mockups in Figma",
-            "Leveraged Antigravity AI Tool for rapid, precise frontend development",
-            "Optimized for 100% paperless onboarding with instant KYC",
-            "Maintained strict enterprise-grade security and brand guidelines"
-        ],
-        solution: "A secure, enterprise-grade platform offering zero balance accounts, instant salary credit, and immediate trading access, completely designed natively and developed via AI.",
-        impact: [
-            "Delivered complete design and codebase rapidly using AI",
-            "Streamlined user data collection into a single, high-conversion flow",
-            "Enabled 100% secure banking and instantaneous investment access"
-        ],
+        number: "06",
+        title: "Instant Corporate Disbursement",
+        client: "HDFC Bank",
+        description: "Constructed an enterprise-grade, paperless banking ecosystem for high-volume salary distributions. Leveraged 'Vibe Coding' to rapidly prototype a hyper-responsive frontend, delivering a purely zero-touch corporate onboarding experience.",
+        tags: ["Enterprise UX", "Vibe Coding", "API Resilience"],
         image: hdfcImage,
         link: "#"
     }
@@ -137,71 +61,100 @@ const projects = [
 
 const Work = () => {
     return (
-        <section id="work" className="work">
+        <section id="work" className="premium-work-section">
+            {/* Immersive Animated Background Vectors - Refined Visibility */}
+            <div className="work-bg-vectors">
+                {/* Parallax Tech Grid */}
+                <svg className="work-grid" width="100%" height="120%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                        <pattern id="work-grid-pattern" width="60" height="60" patternUnits="userSpaceOnUse">
+                            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="var(--primary-color)" strokeWidth="0.8" strokeOpacity="0.15" />
+                            <circle cx="60" cy="60" r="2" fill="var(--secondary-color)" fillOpacity="0.3" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#work-grid-pattern)" />
+                </svg>
+
+                {/* Rotating Data Rings */}
+                <svg className="work-ring-1" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="400" cy="400" r="300" fill="none" stroke="var(--primary-color)" strokeWidth="1.5" strokeOpacity="0.25" strokeDasharray="10 30" />
+                    <circle cx="400" cy="400" r="220" fill="none" stroke="var(--secondary-color)" strokeWidth="1.5" strokeOpacity="0.3" strokeDasharray="5 15" />
+                    <circle cx="400" cy="400" r="140" fill="none" stroke="var(--text-primary)" strokeWidth="1" strokeOpacity="0.2" strokeDasharray="2 6" />
+                </svg>
+
+                {/* Abstract Geometric Architecture */}
+                <svg className="work-geom-1" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <polygon points="500,100 900,900 100,900" fill="none" stroke="var(--secondary-color)" strokeWidth="1.5" strokeOpacity="0.15" />
+                    <circle cx="500" cy="633" r="250" fill="none" stroke="var(--primary-color)" strokeWidth="1" strokeOpacity="0.2" strokeDasharray="4 8" />
+                    <path d="M500 100 L500 900 M100 900 L900 900" stroke="var(--text-primary)" strokeWidth="1" strokeOpacity="0.15" strokeDasharray="2 2" />
+                </svg>
+            </div>
+
             <div className="container">
-                <div className="section-header animate-in">
-                    <h2 className="section-title">Selected <span className="text-gradient">Work</span></h2>
-                    <p className="section-subtitle">Deep dives into how I tackle complex product challenges, apply strategic UX approaches, and drive measurable business impact.</p>
+                <div className="section-header-wrapper">
+                    <div className="floating-icons-bg">
+                        <svg className="anim-icon icon-circle" viewBox="0 0 50 50" aria-hidden="true">
+                            <circle cx="25" cy="25" r="20" fill="none" stroke="var(--primary-color)" strokeWidth="1.5" strokeOpacity="0.5" strokeDasharray="4 4" />
+                        </svg>
+                        <svg className="anim-icon icon-square" viewBox="0 0 50 50" aria-hidden="true">
+                            <rect x="10" y="10" width="30" height="30" fill="none" stroke="var(--secondary-color)" strokeWidth="1.5" strokeOpacity="0.4" transform="rotate(45 25 25)" />
+                        </svg>
+                        <svg className="anim-icon icon-triangle" viewBox="0 0 60 60" aria-hidden="true">
+                            <polygon points="30,10 50,45 10,45" fill="none" stroke="var(--text-primary)" strokeWidth="1.5" strokeOpacity="0.2" />
+                        </svg>
+                    </div>
+                    <div className="section-header center-align animate-in relative-z">
+                        <h2 className="section-title">Signature <span className="text-gradient">Projects</span></h2>
+                        <p className="section-subtitle">A carefully curated collection of high-impact product builds, showcasing strategic UX problem-solving, innovative design storytelling, and measurable business growth. Each project reflects a deep understanding of complex workflows and a commitment to delivering scalable, user-centric solutions.</p>
+                    </div>
                 </div>
 
-                <div className="premium-projects-grid">
-                    {projects.map((project, index) => (
-                        <div key={index} className="premium-project-card glass group">
-                            <div className="premium-project-image">
-                                <img src={project.image} alt={project.title} loading="lazy" />
-                                <div className="premium-project-overlay">
-                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary" aria-label={`View Live Project for ${project.title}`}>
-                                        View Live Project <ExternalLink size={16} aria-hidden="true" />
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div className="premium-project-info">
-                                <div className="pp-header">
-                                    <span className="pp-category">{project.category}</span>
-                                    <h3 className="pp-title">{project.title}</h3>
-
-                                    <div className="pp-meta">
-                                        <div className="meta-item"><span>Role:</span> {project.role}</div>
-                                        <div className="meta-item"><span>Time:</span> {project.duration}</div>
-                                        <div className="meta-item"><span>Team:</span> {project.team}</div>
+                <div className="editorial-work-container">
+                    {projects.map((project, index) => {
+                        const isEven = index % 2 !== 0;
+                        return (
+                            <div className={`editorial-project-row ${isEven ? 'row-reverse' : ''} group`} key={index}>
+                                {/* Visual Side */}
+                                <div className="project-visual-side glass">
+                                    <div className="project-image-wrapper">
+                                        <img src={project.image} alt={project.title} loading="lazy" />
                                     </div>
+                                    <div className="project-image-backdrop"></div>
                                 </div>
 
-                                <div className="pp-body">
-                                    <div className="pp-text-section">
-                                        <h4><span className="pp-number">1</span> Problem</h4>
-                                        <p>{project.problem}</p>
+                                {/* Content Side */}
+                                <div className="project-content-side">
+                                    <div className="project-meta">
+                                        <span className="project-number text-gradient">{project.number}</span>
+                                        <span className="project-client">{project.client}</span>
+                                    </div>
+                                    
+                                    <h3 className="project-headline">{project.title}</h3>
+                                    <p className="project-story">{project.description}</p>
+                                    
+                                    <div className="project-tags-container">
+                                        {project.tags.map((tag, i) => (
+                                            <span key={i} className="editorial-tag">{tag}</span>
+                                        ))}
                                     </div>
 
-                                    <div className="pp-text-section">
-                                        <h4><span className="pp-number">2</span> Approach</h4>
-                                        <ul className="pp-list">
-                                            {project.approach.map((item, i) => (
-                                                <li key={i}>{item}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
-
-                                    <div className="pp-text-section">
-                                        <h4><span className="pp-number">3</span> Solution</h4>
-                                        <p>{project.solution}</p>
-                                    </div>
-
-                                    <div className="pp-impact-box">
-                                        <h4><span className="pp-number" style={{ background: 'var(--accent-color)' }}>4</span> Impact</h4>
-                                        <ul className="pp-impact-list">
-                                            {project.impact.map((item, i) => (
-                                                <li key={i}><CheckCircle2 size={16} className="text-accent" /> {item}</li>
-                                            ))}
-                                        </ul>
+                                    <div className="project-action">
+                                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="editorial-link" aria-label={`View ${project.title} Live`}>
+                                            <span className="link-text">Explore Project</span>
+                                            <span className="link-icon-circle">
+                                                <ArrowUpRight size={18} aria-hidden="true" />
+                                            </span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
+            
+            <div className="ambient-glow work-glow-1"></div>
+            <div className="ambient-glow work-glow-2"></div>
         </section>
     );
 };

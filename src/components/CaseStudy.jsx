@@ -40,7 +40,7 @@ const caseStudies = [
     {
         id: "fintech-onboarding",
         title: "Fintech Onboarding Journey",
-        description: "Transforming manual KYC workflows into seamless, hyper-automated data pipelines utilizing bio-metrics and OCR abstraction.",
+        description: "Transforming manual KYC workflows into seamless, hyper-automated data pipelines utilizing bio-metrics and OCR abstraction. I designed end-to-end user journeys that significantly reduced cognitive load, streamlined complex regulatory compliances into frictionless micro-interactions, and ultimately led to a marked increase in successful account activations.",
         type: "interactive",
         tags: ["Digital KYC", "Biometrics", "UX Architecture"],
         color: "#10b981",
@@ -70,18 +70,34 @@ const CaseStudy = () => {
     return (
         <section id="casestudies" className="case-studies">
             <div className="container">
-                <div className="section-header">
-                    <h2 className="section-title">Case <span className="text-white">Studies</span></h2>
-                    <p className="section-subtitle">Deep dives into my design process, problem-solving methodologies, and final outcomes for complex digital products.</p>
+                <div className="section-header-wrapper">
+                    <div className="floating-icons-bg">
+                        <svg className="anim-icon icon-circle" viewBox="0 0 50 50" aria-hidden="true">
+                            <circle cx="25" cy="25" r="20" fill="none" stroke="var(--primary-color)" strokeWidth="1.5" strokeOpacity="0.5" strokeDasharray="4 4" />
+                        </svg>
+                        <svg className="anim-icon icon-square" viewBox="0 0 50 50" aria-hidden="true">
+                            <rect x="10" y="10" width="30" height="30" fill="none" stroke="var(--secondary-color)" strokeWidth="1.5" strokeOpacity="0.4" transform="rotate(45 25 25)" />
+                        </svg>
+                        <svg className="anim-icon icon-triangle" viewBox="0 0 60 60" aria-hidden="true">
+                            <polygon points="30,10 50,45 10,45" fill="none" stroke="var(--text-primary)" strokeWidth="1.5" strokeOpacity="0.2" />
+                        </svg>
+                    </div>
+                    <div className="section-header center-align animate-in relative-z">
+                        <h2 className="section-title">Case <span className="text-gradient">Studies</span></h2>
+                        <p className="section-subtitle">In-depth explorations of my design process, problem-solving approach, and impactful outcomes for complex digital products. Each study highlights how I translate challenges into user-centric, scalable, and business-driven solutions.</p>
+                    </div>
                 </div>
 
                 <div className="case-studies-grid">
                     {caseStudies.map((study) => (
                         <div className="case-study-card group" key={study.id}>
-                            <div className="case-study-glow" style={{ background: study.color }}></div>
-                            <div className="case-study-content glass">
-                                <div className="case-study-icon" style={{ background: study.gradient }}>
-                                    {study.type === 'interactive' ? <MonitorPlay size={32} color="white" /> : <FileText size={32} color="white" />}
+                            <div className="case-study-glow" style={{ '--accent-glow': study.color }}></div>
+                            <div className="case-study-content">
+                                <div className="cs-header-top">
+                                    <div className="case-study-icon" style={{ background: study.gradient }}>
+                                        {study.type === 'interactive' ? <MonitorPlay size={24} color="white" /> : <FileText size={24} color="white" />}
+                                    </div>
+                                    <span className="cs-type-badge">{study.type === 'interactive' ? 'Demo' : 'PDF Study'}</span>
                                 </div>
 
                                 <h3 className="case-study-title">{study.title}</h3>
@@ -95,16 +111,16 @@ const CaseStudy = () => {
 
                                 <div className="case-study-actions">
                                     {study.type === 'interactive' ? (
-                                        <button onClick={(e) => handleStudyClick(study, e)} className="btn btn-primary btn-small case-study-btn border-none" style={{ backgroundColor: study.color }} aria-label={`View interactive demo for ${study.title}`}>
-                                            View Interactive Demo <ArrowRight size={16} aria-hidden="true" />
+                                        <button onClick={(e) => handleStudyClick(study, e)} className="cs-link" aria-label={`View interactive demo for ${study.title}`}>
+                                            View Interactive Demo <ArrowRight size={18} aria-hidden="true" />
                                         </button>
                                     ) : (
                                         <>
-                                            <a href={study.pdf} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-small case-study-btn" aria-label={`Read case study for ${study.title}`}>
-                                                View Case Study <ArrowRight size={16} aria-hidden="true" />
+                                            <a href={study.pdf} target="_blank" rel="noopener noreferrer" className="cs-link" aria-label={`Read case study for ${study.title}`}>
+                                                Read Full Study <ArrowRight size={18} aria-hidden="true" />
                                             </a>
-                                            <a href={study.pdf} download className="btn btn-outline btn-small icon-only-btn" title={`Download ${study.title} PDF`} aria-label={`Download ${study.title} Case Study PDF`}>
-                                                <Download size={18} aria-hidden="true" />
+                                            <a href={study.pdf} download className="cs-download-link" title={`Download ${study.title} PDF`} aria-label={`Download ${study.title} Case Study PDF`}>
+                                                <Download size={22} aria-hidden="true" />
                                             </a>
                                         </>
                                     )}

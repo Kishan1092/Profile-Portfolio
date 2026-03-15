@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://profile-portfolio-woad.vercel.app/</loc>
+    <loc>https://profile-portfolio-woad.vercel.app/Kishan-Tiwari-Profile</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://profile-portfolio-woad.vercel.app/Kishan-Tiwari-Profile#hero</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://profile-portfolio-woad.vercel.app/Kishan-Tiwari-Profile#about-me</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://profile-portfolio-woad.vercel.app/Kishan-Tiwari-Profile#work</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://profile-portfolio-woad.vercel.app/Kishan-Tiwari-Profile#casestudies</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://profile-portfolio-woad.vercel.app/Kishan-Tiwari-Profile#experience</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://profile-portfolio-woad.vercel.app/Kishan-Tiwari-Profile#skills</loc>
+    <priority>0.8</priority>
   </url>
 </urlset>
