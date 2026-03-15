@@ -45,8 +45,8 @@ const Contact = () => {
                     </div>
 
                     <p className="section-subtitle">
-                        Let’s build what others can’t.<br />
-                        Grab a virtual coffee and let’s talk.
+                        We create digital products that drive measurable impact, solving challenges others shy away from.<br />
+                        Let’s build what others can’t.
                     </p>
 
                     <div className="contact-footer">
