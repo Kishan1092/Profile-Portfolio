@@ -148,10 +148,10 @@ const Work = () => {
                     {projects.map((project, index) => (
                         <div key={index} className="premium-project-card glass group">
                             <div className="premium-project-image">
-                                <img src={project.image} alt={project.title} />
+                                <img src={project.image} alt={project.title} loading="lazy" />
                                 <div className="premium-project-overlay">
-                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                                        View Live Project <ExternalLink size={16} />
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary" aria-label={`View Live Project for ${project.title}`}>
+                                        View Live Project <ExternalLink size={16} aria-hidden="true" />
                                     </a>
                                 </div>
                             </div>

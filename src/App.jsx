@@ -64,19 +64,19 @@ function App() {
             <p>&copy; 2026 Kishan Tiwari</p>
           </div>
           <div className="footer-socials">
-            <a href="https://www.linkedin.com/in/kishan-tiwari-991b9b194/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/kishan-tiwari-991b9b194/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" title="LinkedIn">
               <Linkedin size={20} />
             </a>
-            <a href="https://www.behance.net/kishantiwari1" target="_blank" rel="noopener noreferrer" title="Behance">
+            <a href="https://www.behance.net/kishantiwari1" target="_blank" rel="noopener noreferrer" aria-label="Behance Portfolio" title="Behance">
               <Github size={20} /> {/* Using Github icon for Behance as placeholder or can use custom SVG if needed, but sticking to lucide */}
             </a>
-            <a href="#" title="Dribbble">
+            <a href="#" aria-label="Dribbble Portfolio" title="Dribbble">
               <Dribbble size={20} />
             </a>
-            <a href="#" title="Instagram">
+            <a href="#" aria-label="Instagram Profile" title="Instagram">
               <Instagram size={20} />
             </a>
-            <a href="mailto:kishant@example.com" title="Email">
+            <a href="mailto:kishant@example.com" aria-label="Send Email" title="Email">
               <Mail size={20} />
             </a>
           </div>

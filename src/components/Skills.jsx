@@ -66,7 +66,7 @@ const Skills = () => {
                 </div>
 
                 <div className="skills-cta animate-in">
-                    <a href="https://www.behance.net/kishantiwari1" target="_blank" rel="noopener noreferrer" className="btn btn-outline">View My Full Portfolio</a>
+                    <a href="https://www.behance.net/kishantiwari1" target="_blank" rel="noopener noreferrer" className="btn btn-outline" aria-label="View Kishan Tiwari's Behance Portfolio">View My Full Portfolio</a>
                 </div>
             </div>
         </section>

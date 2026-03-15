@@ -7,7 +7,7 @@ const Hero = () => {
             {/* Background Vectors */}
             <div className="hero-bg-vectors">
                 {/* Enhanced Tech Grid Pattern */}
-                <svg className="vector-grid" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <svg className="vector-grid" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <defs>
                         <pattern id="grid-pattern-small" width="20" height="20" patternUnits="userSpaceOnUse">
                             <path d="M 20 0 L 0 0 0 20" fill="none" stroke="currentColor" strokeWidth="0.5" strokeOpacity="0.05" />
@@ -21,25 +21,25 @@ const Hero = () => {
                 </svg>
 
                 {/* Multiple Abstract Rings */}
-                <svg className="vector-ring vector-ring-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <svg className="vector-ring vector-ring-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <circle cx="100" cy="100" r="98" fill="none" stroke="var(--primary-color)" strokeWidth="1" strokeOpacity="0.5" strokeDasharray="5, 10" />
                     <circle cx="100" cy="100" r="80" fill="none" stroke="var(--secondary-color)" strokeWidth="1" strokeOpacity="0.5" strokeDasharray="2, 4" />
                     <circle cx="100" cy="100" r="60" fill="none" stroke="var(--primary-color)" strokeWidth="0.5" strokeOpacity="0.3" strokeDasharray="1, 8" />
                 </svg>
 
-                <svg className="vector-ring vector-ring-2" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <svg className="vector-ring vector-ring-2" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <circle cx="200" cy="200" r="190" fill="none" stroke="var(--primary-color)" strokeWidth="1.5" strokeOpacity="0.25" strokeDasharray="10, 30" />
                     <circle cx="200" cy="200" r="160" fill="none" stroke="var(--secondary-color)" strokeWidth="1" strokeOpacity="0.25" strokeDasharray="5, 15" />
                     <circle cx="200" cy="200" r="130" fill="none" stroke="var(--text-primary)" strokeWidth="0.5" strokeOpacity="0.15" strokeDasharray="2, 6" />
                 </svg>
 
-                <svg className="vector-ring vector-ring-3" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <svg className="vector-ring vector-ring-3" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <circle cx="150" cy="150" r="140" fill="none" stroke="var(--secondary-color)" strokeWidth="2" strokeOpacity="0.3" strokeDasharray="20, 60" />
                     <circle cx="150" cy="150" r="110" fill="none" stroke="var(--primary-color)" strokeWidth="1" strokeOpacity="0.4" strokeDasharray="10, 20" />
                 </svg>
 
                 {/* Fintech Abstract Nodes & Connections */}
-                <svg className="vector-nodes" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" overflow="visible">
+                <svg className="vector-nodes" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" overflow="visible" aria-hidden="true">
                     <path d="M50 50 L150 150 L350 100 L250 250 L100 200 Z" fill="none" stroke="var(--primary-color)" strokeWidth="1.5" strokeOpacity="0.25" strokeDasharray="6,6" />
                     <path d="M150 150 L250 50 L350 100" fill="none" stroke="var(--secondary-color)" strokeWidth="1" strokeOpacity="0.4" />
                     <path d="M100 200 L50 250" fill="none" stroke="var(--text-primary)" strokeWidth="1" strokeOpacity="0.2" />
@@ -62,14 +62,14 @@ const Hero = () => {
                 </svg>
 
                 {/* Floating Tech Elements */}
-                <svg className="vector-float vector-float-1" viewBox="0 0 50 50">
+                <svg className="vector-float vector-float-1" viewBox="0 0 50 50" aria-hidden="true">
                     <rect x="10" y="10" width="30" height="30" fill="none" stroke="var(--primary-color)" strokeWidth="1.5" strokeOpacity="0.6" transform="rotate(45 25 25)" />
                     <circle cx="25" cy="25" r="4" fill="var(--primary-color)" fillOpacity="0.9" />
                 </svg>
-                <svg className="vector-float vector-float-2" viewBox="0 0 60 60">
+                <svg className="vector-float vector-float-2" viewBox="0 0 60 60" aria-hidden="true">
                     <polygon points="30,5 55,50 5,50" fill="none" stroke="var(--secondary-color)" strokeWidth="1.5" strokeOpacity="0.6" />
                 </svg>
-                <svg className="vector-float vector-float-3" viewBox="0 0 40 40">
+                <svg className="vector-float vector-float-3" viewBox="0 0 40 40" aria-hidden="true">
                     <rect x="5" y="5" width="30" height="30" rx="8" fill="none" stroke="var(--text-primary)" strokeWidth="1" strokeOpacity="0.3" />
                     <circle cx="20" cy="20" r="8" fill="none" stroke="var(--text-primary)" strokeWidth="1" strokeOpacity="0.3" strokeDasharray="2,2" />
                 </svg>
@@ -87,15 +87,15 @@ const Hero = () => {
                             </p>
                         </div>
                         <div className="hero-actions">
-                            <a href="#casestudies" className="btn btn-primary">View Case Studies</a>
-                            <a href="/Kishan 6 years (1).pdf" download="Kishan_Tiwari_Resume.pdf" className="btn btn-outline">Download Resume</a>
-                            <a href="#contact" className="btn btn-outline">Contact Me</a>
+                            <a href="#casestudies" className="btn btn-primary" aria-label="View Kishan's Case Studies">View Case Studies</a>
+                            <a href="/Kishan 6 years (1).pdf" download="Kishan_Tiwari_Resume.pdf" className="btn btn-outline" aria-label="Download Kishan's Resume PDF">Download Resume</a>
+                            <a href="#contact" className="btn btn-outline" aria-label="Contact Kishan Tiwari">Contact Me</a>
                         </div>
                     </div>
                     <div className="hero-image-side">
                         <div className="profile-image-container">
                             <div className="hero-shape-decorator">
-                                <svg width="400" height="400" viewBox="0 0 400 400" fill="none">
+                                <svg width="400" height="400" viewBox="0 0 400 400" fill="none" aria-hidden="true">
                                     <circle cx="200" cy="200" r="150" stroke="var(--primary-color)" strokeWidth="0.5" strokeDasharray="10 10" opacity="0.3" />
                                     <circle cx="200" cy="200" r="180" stroke="var(--secondary-color)" strokeWidth="0.5" strokeDasharray="5 15" opacity="0.2" />
                                 </svg>

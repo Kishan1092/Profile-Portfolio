@@ -17,7 +17,7 @@ const Navbar = ({ theme, toggleTheme }) => {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${isMenuOpen ? 'menu-open' : ''}`}>
       <div className="container nav-content">
-        <a href="#hero" className="logo">
+        <a href="#hero" className="logo" aria-label="Back to home">
           <div className="logo-icon">KT</div>
           <div className="logo-details">
             <span className="logo-text">Kishan Tiwari</span>
@@ -41,6 +41,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             className={`theme-switch ${theme}`}
             onClick={toggleTheme}
             title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
           >
             <div className="switch-handle">
               {theme === 'dark' ? <Moon size={14} fill="currentColor" /> : <Sun size={14} fill="currentColor" />}
@@ -49,7 +50,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             <Moon className="nav-icon moon" size={16} />
           </button>
 
-          <a href="#contact" className="btn-hire">
+          <a href="#contact" className="btn-hire" aria-label="Let's Talk">
             <span>Let's Talk</span>
             <Rocket size={16} />
           </a>

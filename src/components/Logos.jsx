@@ -27,6 +27,7 @@ const LogoItem = ({ company }) => {
                     src={`https://logo.clearbit.com/${company.domain}`}
                     alt={company.name}
                     className="company-logo-img"
+                    loading="lazy"
                     onError={() => setImgError(true)}
                 />
             ) : (

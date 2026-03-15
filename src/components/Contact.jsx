@@ -16,10 +16,10 @@ const Contact = () => {
                     </p>
 
                     <div className="contact-footer">
-                        <a href="mailto:kishan.tiwari1092@gmail.com" className="contact-email">kishan.tiwari1092@gmail.com</a>
+                        <a href="mailto:kishan.tiwari1092@gmail.com" className="contact-email" aria-label="Send an email to Kishan Tiwari">kishan.tiwari1092@gmail.com</a>
                         <div className="contact-actions">
-                            <a href="https://www.linkedin.com/in/kishan-tiwari-991b9b194/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">LinkedIn</a>
-                            <a href="/Kishan 6 years (1).pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline">Download CV</a>
+                            <a href="https://www.linkedin.com/in/kishan-tiwari-991b9b194/" target="_blank" rel="noopener noreferrer" className="btn btn-primary" aria-label="Visit Kishan Tiwari's LinkedIn Profile">LinkedIn</a>
+                            <a href="/Kishan 6 years (1).pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline" aria-label="Download Kishan Tiwari's CV">Download CV</a>
                         </div>
                     </div>
                 </div>

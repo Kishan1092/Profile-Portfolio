@@ -95,16 +95,16 @@ const CaseStudy = () => {
 
                                 <div className="case-study-actions">
                                     {study.type === 'interactive' ? (
-                                        <button onClick={(e) => handleStudyClick(study, e)} className="btn btn-primary btn-small case-study-btn border-none" style={{ backgroundColor: study.color }}>
-                                            View Interactive Demo <ArrowRight size={16} />
+                                        <button onClick={(e) => handleStudyClick(study, e)} className="btn btn-primary btn-small case-study-btn border-none" style={{ backgroundColor: study.color }} aria-label={`View interactive demo for ${study.title}`}>
+                                            View Interactive Demo <ArrowRight size={16} aria-hidden="true" />
                                         </button>
                                     ) : (
                                         <>
-                                            <a href={study.pdf} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-small case-study-btn">
-                                                View Case Study <ArrowRight size={16} />
+                                            <a href={study.pdf} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-small case-study-btn" aria-label={`Read case study for ${study.title}`}>
+                                                View Case Study <ArrowRight size={16} aria-hidden="true" />
                                             </a>
-                                            <a href={study.pdf} download className="btn btn-outline btn-small icon-only-btn" title="Download PDF">
-                                                <Download size={18} />
+                                            <a href={study.pdf} download className="btn btn-outline btn-small icon-only-btn" title={`Download ${study.title} PDF`} aria-label={`Download ${study.title} Case Study PDF`}>
+                                                <Download size={18} aria-hidden="true" />
                                             </a>
                                         </>
                                     )}
