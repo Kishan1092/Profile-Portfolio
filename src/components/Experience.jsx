@@ -1,4 +1,5 @@
 import './Experience.css';
+import { Briefcase, ChevronRight } from 'lucide-react';
 
 const experiences = [
     {
@@ -48,23 +49,40 @@ const Experience = () => {
                         <p className="section-subtitle">A progressive path of design and development excellence, where I’ve transformed complex digital products into intuitive, user-centric experiences. Over the years, I’ve combined strategic UX thinking, cutting-edge frontend skills, and AI-enabled workflows to deliver measurable business impact across Fintech, Enterprise SaaS, and other high-growth domains.</p>
                     </div>
                 </div>
-                <div className="experience-list">
+                <div className="experience-timeline">
                     {experiences.map((exp, index) => (
                         <div
                             key={index}
-                            className="experience-item glass"
+                            className={`experience-timeline-node group fade-in-up active`}
+                            style={{ animationDelay: `${index * 0.15}s` }}
                         >
-                            <div className="exp-side">
-                                <span className="exp-period">{exp.period}</span>
+                            {/* Timeline Anchor */}
+                            <div className="timeline-marker">
+                                <div className="marker-dot"></div>
+                                {index !== experiences.length - 1 && <div className="marker-line"></div>}
                             </div>
-                            <div className="exp-main">
-                                <h3 className="exp-role">{exp.role}</h3>
-                                <p className="exp-company">{exp.company}</p>
-                                {exp.description.split('\n\n').map((paragraph, i) => (
-                                    <p key={i} className="exp-desc" style={{ marginBottom: i < exp.description.split('\n\n').length - 1 ? '1rem' : '0' }}>
-                                        {paragraph}
-                                    </p>
-                                ))}
+                            
+                            <div className="experience-item glass">
+                                <div className="exp-side">
+                                    <div className="exp-icon-box">
+                                        <Briefcase size={24} className="exp-icon" />
+                                    </div>
+                                    <span className="exp-period text-gradient">{exp.period}</span>
+                                </div>
+                                <div className="exp-main">
+                                    <div className="exp-header">
+                                        <h3 className="exp-role">{exp.role}</h3>
+                                        <p className="exp-company">{exp.company}</p>
+                                    </div>
+                                    <div className="exp-content">
+                                        {exp.description.split('\n\n').map((paragraph, i) => (
+                                            <p key={i} className="exp-desc" style={{ marginBottom: i < exp.description.split('\n\n').length - 1 ? '1rem' : '0' }}>
+                                                {i === 0 && <ChevronRight size={16} className="desc-bullet" />}
+                                                {paragraph}
+                                            </p>
+                                        ))}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     ))}

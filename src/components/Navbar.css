@@ -12,10 +12,10 @@
 .navbar.scrolled {
     padding: 1rem 0;
     background: var(--surface-color-glass);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--border-color);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 }
 
 .nav-content {
@@ -74,7 +74,7 @@
 /* Nav Links */
 .nav-links {
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .nav-links a {
@@ -174,10 +174,10 @@
 .btn-hire {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.5rem;
     background: var(--gradient-main);
     color: white;
-    padding: 0.7rem 1.4rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 14px;
     font-weight: 700;
     font-size: 0.85rem;
@@ -261,7 +261,7 @@
 
     .nav-links {
         flex-direction: column;
-        gap: 2.5rem;
+        gap: 2rem;
         text-align: center;
     }
 
@@ -280,6 +280,6 @@
     }
 
     .btn-hire {
-        padding: 0.7rem;
+        padding: 0.5rem;
     }
 }

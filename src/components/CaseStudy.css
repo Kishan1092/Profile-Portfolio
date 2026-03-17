@@ -1,5 +1,5 @@
 .case-studies {
-    padding: 6rem 0;
+    padding: 4rem 0;
     transition: var(--transition-smooth);
     position: relative;
     overflow: hidden;
@@ -8,7 +8,7 @@
 
 .case-studies .section-header {
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -24,7 +24,7 @@
 .case-studies-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    gap: 2rem;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -43,7 +43,7 @@
 }
 
 .case-study-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-5px);
     border-color: rgba(69, 104, 220, 0.4);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
@@ -76,7 +76,7 @@
 .case-study-content {
     position: relative;
     z-index: 1;
-    padding: 3rem 2.5rem;
+    padding: 3rem 2rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -105,7 +105,7 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-weight: 700;
-    padding: 0.4rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 20px;
     border: 1px solid var(--border-color);
     background: rgba(255, 255, 255, 0.03);
@@ -125,14 +125,14 @@
     color: var(--text-secondary);
     font-size: 0.95rem;
     line-height: 1.7;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     flex-grow: 1;
 }
 
 .case-study-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.6rem;
+    gap: 0.5rem;
     margin-bottom: 3rem;
     padding-top: 1.5rem;
     border-top: 1px solid var(--border-color);
@@ -140,7 +140,7 @@
 
 .case-study-tag {
     color: var(--text-primary);
-    padding: 0.4rem 0.8rem;
+    padding: 0.5rem 1rem;
     border-radius: 6px;
     font-size: 0.75rem;
     font-weight: 600;
@@ -168,7 +168,7 @@
     color: var(--text-primary);
     text-decoration: none;
     position: relative;
-    padding-bottom: 0.3rem;
+    padding-bottom: 0.5rem;
     cursor: pointer;
     background: none;
     border: none;
@@ -241,7 +241,7 @@
     }
 
     .case-study-content {
-        padding: 2.5rem;
+        padding: 2rem;
     }
 }
 

@@ -1,5 +1,5 @@
 .premium-work-section {
-    padding: 6rem 0;
+    padding: 4rem 0;
     position: relative;
     background: transparent;
     z-index: 10;
@@ -7,7 +7,7 @@
 
 .center-align {
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 .editorial-work-container {
@@ -23,7 +23,7 @@
 .editorial-project-row {
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 4rem;
     position: relative;
     transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -74,7 +74,8 @@
 
 .editorial-project-row:hover .project-visual-side {
     border-color: rgba(69, 104, 220, 0.5);
-    transform: translateY(-8px);
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .project-image-backdrop {
@@ -108,7 +109,7 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .project-number {
@@ -124,7 +125,7 @@
     letter-spacing: 2px;
     font-weight: 800;
     color: var(--text-secondary);
-    padding: 0.4rem 1rem;
+    padding: 0.5rem 1rem;
     border: 1px solid var(--border-color);
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.03);
@@ -150,7 +151,7 @@
 .project-tags-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.8rem;
+    gap: 1rem;
     margin-bottom: 3rem;
 }
 
@@ -282,7 +283,7 @@
     }
 
     .editorial-work-container {
-        gap: 6rem;
+        gap: 4rem;
     }
 }
 
@@ -301,7 +302,7 @@
     
     .project-meta {
         flex-direction: column;
-        gap: 0.8rem;
+        gap: 1rem;
     }
 }
 

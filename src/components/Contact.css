@@ -1,12 +1,12 @@
 .contact {
-    padding: 4rem 9rem;
+    padding: 4rem 4rem;
     transition: var(--transition-smooth);
 }
 
 .contact-card {
     position: relative;
     border-radius: 48px;
-    padding: 8rem 4rem;
+    padding: 4rem 4rem;
     overflow: hidden;
     text-align: center;
     background: var(--surface-color-glass);
@@ -44,7 +44,7 @@
 .contact-card .section-subtitle {
     font-size: 1.15rem;
     color: var(--text-secondary);
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
@@ -55,7 +55,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .contact-actions {
@@ -138,7 +138,7 @@
     }
 
     .contact-card {
-        padding: 5rem 1.5rem;
+        padding: 4rem 1.5rem;
         border-radius: 32px;
     }
 

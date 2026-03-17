@@ -17,7 +17,7 @@
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     font-weight: 700;
 }
 
@@ -34,9 +34,9 @@
 .logos-track {
     display: flex;
     width: max-content;
-    gap: 2.5rem;
+    gap: 2rem;
     animation: marquee-scroll 50s linear infinite;
-    padding-left: 2.5rem;
+    padding-left: 2rem;
 }
 
 .logos-track:hover {
@@ -47,7 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.25rem 2.5rem;
+    padding: 1rem 2rem;
     border-radius: 16px;
     background: var(--surface-color);
     border: 1px solid var(--border-color);
@@ -109,7 +109,7 @@
     }
 
     .logo-item {
-        padding: 1rem 1.75rem;
+        padding: 1rem 1.5rem;
         border-radius: 12px;
     }
 
