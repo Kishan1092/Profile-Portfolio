@@ -1,4 +1,5 @@
 import './Contact.css';
+import cvFile from '../assets/Kishan_Tiwari_CV.pdf';
 
 const Contact = () => {
     return (
@@ -58,7 +59,7 @@ const Contact = () => {
                         </div>
                         <div className="contact-actions" style={{ marginTop: '1rem' }}>
                             <a href="https://www.linkedin.com/in/kishan-tiwari-991b9b194/" target="_blank" rel="noopener noreferrer" className="btn btn-primary" aria-label="Visit Kishan Tiwari's LinkedIn Profile">LinkedIn</a>
-                            <a href="/Kishan 6 years (1).pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline" aria-label="Download Kishan Tiwari's CV">Download CV</a>
+                            <a href={cvFile} download="Kishan_Tiwari_CV.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline" aria-label="Download Kishan Tiwari's CV">Download CV</a>
                         </div>
                     </div>
                 </div>

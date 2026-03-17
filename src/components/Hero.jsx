@@ -1,5 +1,6 @@
 import Typewriter from 'typewriter-effect';
 import './Hero.css';
+import cvFile from '../assets/Kishan_Tiwari_CV.pdf';
 
 const Hero = () => {
     return (
@@ -88,7 +89,7 @@ const Hero = () => {
                         </div>
                         <div className="hero-actions">
                             <a href="#casestudies" className="btn btn-primary" aria-label="View Kishan's Case Studies">View Case Studies</a>
-                            <a href="/Kishan 6 years (1).pdf" download="Kishan_Tiwari_Resume.pdf" className="btn btn-outline" aria-label="Download Kishan's Resume PDF">Download Resume</a>
+                            <a href={cvFile} download="Kishan_Tiwari_CV.pdf" className="btn btn-outline" aria-label="Download Kishan's Resume PDF">Download Resume</a>
                             <a href="#contact" className="btn btn-outline" aria-label="Contact Kishan Tiwari">Contact Me</a>
                         </div>
                     </div>
