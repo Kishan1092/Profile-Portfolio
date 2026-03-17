@@ -1,5 +1,6 @@
+import { useState } from 'react';
 import './Experience.css';
-import { Briefcase, ChevronRight } from 'lucide-react';
+import { Briefcase, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react';
 
 const experiences = [
     {
@@ -29,6 +30,15 @@ const experiences = [
 ];
 
 const Experience = () => {
+    const [expandedIds, setExpandedIds] = useState({});
+
+    const toggleExpand = (index) => {
+        setExpandedIds(prev => ({
+            ...prev,
+            [index]: !prev[index]
+        }));
+    };
+
     return (
         <section id="experience" className="experience">
             <div className="container">
@@ -75,12 +85,28 @@ const Experience = () => {
                                         <p className="exp-company">{exp.company}</p>
                                     </div>
                                     <div className="exp-content">
-                                        {exp.description.split('\n\n').map((paragraph, i) => (
-                                            <p key={i} className="exp-desc" style={{ marginBottom: i < exp.description.split('\n\n').length - 1 ? '1rem' : '0' }}>
-                                                {i === 0 && <ChevronRight size={16} className="desc-bullet" />}
-                                                {paragraph}
-                                            </p>
-                                        ))}
+                                        {exp.description.split('\n\n').map((paragraph, i) => {
+                                            const isExpanded = expandedIds[index];
+                                            if (i > 0 && !isExpanded) return null;
+
+                                            return (
+                                                <p key={i} className="exp-desc" style={{ marginBottom: i < exp.description.split('\n\n').length - 1 ? '1rem' : '0' }}>
+                                                    {i === 0 && <ChevronRight size={16} className="desc-bullet" />}
+                                                    {paragraph}
+                                                </p>
+                                            );
+                                        })}
+
+                                        {exp.description.split('\n\n').length > 1 && (
+                                            <button 
+                                                className="read-more-btn"
+                                                onClick={() => toggleExpand(index)}
+                                                aria-expanded={expandedIds[index]}
+                                            >
+                                                {expandedIds[index] ? 'Show Less' : 'Read More Details'}
+                                                {expandedIds[index] ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                                            </button>
+                                        )}
                                     </div>
                                 </div>
                             </div>
